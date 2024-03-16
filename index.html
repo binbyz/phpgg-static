@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+
+    <title>GG - The Tool That Makes PHP Debugging Easy</title>
+    <meta name="description" content="GG is a free debugging tool that can be used with PHP Laravel Framework!">
+    <meta name="keywords" content="PHP, debugging, free, GG, Laravel, beaverlabs">
+    <meta name="naver-site-verification" content="cbb2a51b29d26fe55452119300d853245fd91cf7">
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+      gtag('config', 'G-GH96MGBH0T');
+    </script>
+
+    <!-- Google for Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11272382768"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11272382768');
+    </script>
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-11272382768/WfqJCI7M7MAYELDSi_8p'});
+    </script>
+
+    <link rel="preload" as="style" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<div class="container w-full mx-auto pt-20 px-10">
+
+    <header class="mb-20 text-center">
+        <h1>Good Game, Great Code</h1>
+        <span class="text-xl">With gg, PHP Debugging is a breeze!</span>
+    </header>
+
+    <article class="flex flex-col">
+        <h2>About GG</h2>
+
+        <div class="--text">
+            GG Client is a debugging client tool for <strong>PHP</strong> <strong>Laravel framework</strong> developers.
+            It allows you to visually inspect the values stored in variables and continue with continuous development.
+            You no longer need to follow the conventional approach of printing variables on web pages using traditional
+            methods.
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-center">
+            <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu mb-5"
+                 src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/component-min.png"
+                 alt="GG Client">
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+            <section class="--section flex flex-col md:w-1/2 md:justify-center">
+                <div class="flex flex-col gap-3 items-center justify-center my-2">
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/phpgg.kr/download/GG+Client-2.1.0-arm64.dmg"
+                       class="bg-blue-500 hover:bg-blue-700 !text-white !font-normal py-2 px-4 rounded mb-5">Download
+                        for Mac (amd64)</a>
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/phpgg.kr/download/GG+Client-2.1.0.dmg"
+                       class="bg-blue-500 hover:bg-blue-700 !text-white !font-normal py-2 px-4 rounded">Download for
+                        Mac</a>
+                </div>
+                <div class="text-center text-gray-500">Please download the installation file suitable<br>for your
+                    operating system from the given options.
+                </div>
+            </section>
+
+            <section class="--section md:w-1/2">
+                <h3>Shortcuts</h3>
+                <table class="min-w-full rounded-md">
+                    <tr>
+                        <th class="p-4 border-b font-medium text-gray-700">Variable View</th>
+                        <td class="p-4 border-b">
+                            <span class="--shortcut">Cmd + 1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="p-4 border-b font-medium text-gray-700">Exception View</th>
+                        <td class="p-4 border-b">
+                            <span class="--shortcut">Cmd + 2</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="p-4 border-b font-medium text-gray-700">Local Saved View</th>
+                        <td class="p-4 border-b">
+                            <span class="--shortcut">Cmd + 3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="p-4 font-medium text-gray-700">Reverse Mode</th>
+                        <td class="p-4">
+                            <span class="--shortcut">Cmd + R</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <hr>
+
+        <h2>Requirements and Install</h2>
+        <div class="flex flex-col md:flex-row md:space-x-10">
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Requirements</h3>
+                    <div class="--text">
+                        <strong>PHP 7.4 or later</strong> is required to use <a href="https://github.com/binbyz/gg"
+                                                                                target="_blank">beaverlabs/gg</a>.<br>
+                        The Laravel framework also requires <strong>7.2 or later</strong>.
+                    </div>
+                </section>
+            </div>
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Install</h3>
+                    <div class="--code command-line">composer require --dev beaverlabs/gg</div>
+                </section>
+                <section class="--section">
+                    <h3 class="--important">Environments .env</h3>
+                    <div class="--code">
+                        GG_ENABLED=<span class="text-gray-500">true</span><br>
+                        GG_HOST=<span class="text-gray-500">host.docker.internal</span>
+                        <span class="text-green-700"># If you using docker container</span><br>
+                        GG_HTTP_RESPONSE_LISTENER=<span class="text-gray-500">true</span><br>
+                        GG_MODEL_QUERY_LISTENER=<span class="text-gray-500">true</span><br>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Functions</h2>
+        <div class="flex flex-col md:flex-row md:space-x-10">
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Print Variables</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div><strong class="text-pink-600">gg</strong>(<span class="text-blue-600">$foo</span>, <span
+                                class="text-blue-600">$bar</span>);
+                        </div>
+                        <div><strong class="text-pink-600">gd</strong>(<span class="text-blue-600">$test</span>); <span
+                                class="text-green-700">// exit</span></div>
+                    </div>
+                </section>
+                <section class="--section">
+                    <h3>Note</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div>for (<span class="text-blue-600">$i= 0</span>; <span class="text-blue-600">$i</span> < 100;
+                            <span class="text-blue-600">$i</span>++) {
+                        </div>
+                        <div class="pl-4"><strong>gg(<span
+                                class="text-blue-600 font-normal">$i</span>)</strong>-><strong class="text-pink-600">note</strong>(fn()
+                            => <span class="text-blue-600">$i</span> % 2 === 0, '😛');
+                        </div>
+                        <div>}</div>
+                    </div>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div><strong>gg(<span class="text-blue-600 font-normal">$i</span>)</strong>-><strong
+                                class="text-pink-600">note</strong>('Hello, Note');
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Memory Usage</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div><strong>gg()</strong>-><strong class="text-pink-600">begin()</strong>;</div>
+                        <div class="text-green-700">// ..</div>
+                        <div class="text-green-700">// some your codes</div>
+                        <div class="text-green-700">// ..</div>
+                        <div><strong>gg()</strong>-><strong class="text-pink-600">end()</strong>;</div>
+                    </div>
+                </section>
+                <section class="--section">
+                    <h3>With backtrace</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div><strong class="text-pink-600">gtrace</strong>(<span class="text-blue-600">$foo</span>);
+                        </div>
+                        <div><br></div>
+                        <div class="text-green-700">// or enable trace option</div>
+                        <strong class="block">gg()-><span class="text-pink-600">onTrace()</span>;</strong>
+                        <strong class="block">gg(<span class="text-blue-600">$bar</span>);</strong>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Laravel Framework</h2>
+        <div class="flex flex-col md:flex-row md:space-x-10">
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Collection</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div><strong>collect</strong>(<span
+                                class="text-blue-600">['taylor', 'abigail', null]</span>)-><strong
+                                class="text-pink-600">gg()</strong>;
+                        </div>
+                    </div>
+                </section>
+                <section class="--section">
+                    <h3>Eloquent</h3>
+                    <div class="--code">
+                        <div class="text-gray-500">&lt;?php</div>
+                        <div class="text-green-700">// show query</div>
+                        <div><span class="text-gray-500">\App\Models\</span><span
+                                class="text-gray-700 font-bold">User</span>::<span class="text-blue-600">where</span>('id',
+                            1)-><span class="text-blue-600">where</span>('name', 'gg')-><span
+                                    class="text-pink-600 font-bold">gg()</span>;
+                        </div>
+                    </div>
+                </section>
+                <section class="--section">
+                    <h3>Http Watcher</h3>
+                    <div class="--text">
+                        The Guzzle Http capture listener is activated. It is a great tool when developing an MSA
+                        architecture. You can easily check how long the actual Http request takes, whether it responds
+                        normally, and what headers it contains.
+                    </div>
+
+                    <div class="flex justify-center items-center my-2">
+                        <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
+                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/http_listener.png"
+                             alt="throwable">
+                    </div>
+                </section>
+            </div>
+            <div class="md:w-1/2">
+                <section class="--section">
+                    <h3>Sql Watcher</h3>
+                    <div class="--text">
+                        When the Model is executed, it automatically captures the query and allows you to see which
+                        queries were executed for how many milliseconds in the currently executed logic. Syntax
+                        highlighting works to output queries in a developer-friendly manner.
+                    </div>
+
+                    <div class="flex justify-center items-center my-2">
+                        <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
+                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/sql_listener.png"
+                             alt="throwable">
+                    </div>
+                </section>
+                <section class="--section">
+                    <h3>Exception Watcher</h3>
+                    <div class="--text">
+                        The <a href="https://github.com/binbyz/gg" target="_blank">beaverlabs/gg</a> library utilizes
+                        Laravel framework's ServiceProvider to detect when an exception object is logged, allowing
+                        clients to quickly inspect error details. Additionally, the exception object collects the call
+                        stack by default, providing source code visibility along with the error information.
+                    </div>
+
+                    <div class="flex justify-center items-center my-2">
+                        <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
+                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/throwable-min.png"
+                             alt="throwable">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+</div>
+
+<footer class="p-5">
+
+</footer>
+
+</body>
+
+</html>
