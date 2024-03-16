@@ -1,0 +1,1 @@
+# phpgg-static
