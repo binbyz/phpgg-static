@@ -9,7 +9,7 @@
 
     <title>GG - The Tool That Makes PHP Debugging Easy</title>
     <meta name="description" content="GG is a free debugging tool that can be used with PHP Laravel Framework!">
-    <meta name="keywords" content="PHP, debugging, free, GG, Laravel, beaverlabs">
+    <meta name="keywords" content="PHP, debugging, free, GG, Laravel, eyedroot">
     <meta name="naver-site-verification" content="cbb2a51b29d26fe55452119300d853245fd91cf7">
 
     <script>
@@ -65,7 +65,7 @@
 
         <div class="flex flex-col md:flex-row items-center justify-center">
             <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu mb-5"
-                 src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/component-min.png"
+                 src="https://raw.githubusercontent.com/eyedroot/public-gg-client/main/images/component-min.png"
                  alt="GG Client">
         </div>
 
@@ -123,23 +123,23 @@
                 <section class="--section">
                     <h3>Requirements</h3>
                     <div class="--text">
-                        <strong>PHP 7.4 or later</strong> is required to use <a href="https://github.com/binbyz/gg"
-                                                                                target="_blank">beaverlabs/gg</a>.<br>
-                        The Laravel framework also requires <strong>7.2 or later</strong>.
+                        <strong>PHP 8.3 or later</strong> is required to use <a href="https://github.com/eyedroot/gg"
+                                                                                target="_blank">eyedroot/gg</a>.<br>
+                        The Laravel framework also requires <strong>9.0 or later</strong>.
                     </div>
                 </section>
             </div>
             <div class="md:w-1/2">
                 <section class="--section">
                     <h3>Install</h3>
-                    <div class="--code command-line">composer require --dev beaverlabs/gg</div>
+                    <div class="--code command-line">composer require --dev eyedroot/gg</div>
                 </section>
                 <section class="--section">
                     <h3 class="--important">Environments .env</h3>
                     <div class="--code">
                         GG_ENABLED=<span class="text-gray-500">true</span><br>
-                        GG_HOST=<span class="text-gray-500">host.docker.internal</span>
-                        <span class="text-green-700"># If you using docker container</span><br>
+                        GG_HOST=<span class="text-gray-500">host.docker.internal</span><span class="text-green-700"># If you using docker container</span><br>
+                        GG_EXCEPTION_LISTENER=<span class="text-gray-500">true</span><br>
                         GG_HTTP_RESPONSE_LISTENER=<span class="text-gray-500">true</span><br>
                         GG_MODEL_QUERY_LISTENER=<span class="text-gray-500">true</span><br>
                     </div>
@@ -248,7 +248,7 @@
 
                     <div class="flex justify-center items-center my-2">
                         <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
-                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/http_listener.png"
+                             src="https://raw.githubusercontent.com/eyedroot/public-gg-client/main/images/http_listener.png"
                              alt="throwable">
                     </div>
                 </section>
@@ -264,14 +264,14 @@
 
                     <div class="flex justify-center items-center my-2">
                         <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
-                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/sql_listener.png"
+                             src="https://raw.githubusercontent.com/eyedroot/public-gg-client/main/images/sql_listener.png"
                              alt="throwable">
                     </div>
                 </section>
                 <section class="--section">
                     <h3>Exception Watcher</h3>
                     <div class="--text">
-                        The <a href="https://github.com/binbyz/gg" target="_blank">beaverlabs/gg</a> library utilizes
+                        The <a href="https://github.com/eyedroot/gg" target="_blank">eyedroot/gg</a> library utilizes
                         Laravel framework's ServiceProvider to detect when an exception object is logged, allowing
                         clients to quickly inspect error details. Additionally, the exception object collects the call
                         stack by default, providing source code visibility along with the error information.
@@ -279,7 +279,7 @@
 
                     <div class="flex justify-center items-center my-2">
                         <img data-click-blank class="md:w-2/3 transition-transform duration-500 transform-gpu"
-                             src="https://raw.githubusercontent.com/binbyz/public-gg-client/main/images/throwable-min.png"
+                             src="https://raw.githubusercontent.com/eyedroot/public-gg-client/main/images/throwable-min.png"
                              alt="throwable">
                     </div>
                 </section>
